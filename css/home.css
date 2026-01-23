@@ -201,6 +201,11 @@
     margin-bottom: 1.5rem;
 }
 
+.timeline-small .timeline-marker {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .small-item {
     background: rgba(74, 20, 140, 0.25);
     border: 1px solid rgba(206, 147, 216, 0.25);
@@ -289,6 +294,12 @@
         grid-template-columns: 1fr;
         width: calc(100% - 80px);
         margin-left: 80px;
+    }
+
+    .small-item {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+        margin-right: 0;
     }
     
     .event-text h3 {
