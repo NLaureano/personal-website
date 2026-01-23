@@ -1,0 +1,134 @@
+/* Projects Page Styles */
+
+body {
+    background: linear-gradient(135deg, #1a0033 0%, #2d0052 50%, #1a0033 100%);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: rgba(74, 20, 140, 0.35);
+    border: 2px solid rgba(206, 147, 216, 0.35);
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.hero h1 {
+    color: #ce93d8;
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.hero p {
+    color: #e1bee7;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0.6rem auto 0;
+}
+
+.section-title {
+    color: #ce93d8;
+    font-size: 1.9rem;
+    margin: 3rem 0 1.2rem;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: rgba(74, 20, 140, 0.4);
+    border: 1px solid rgba(206, 147, 216, 0.35);
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.45);
+}
+
+.project-card h3 {
+    color: #e6c6ee;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.project-card p {
+    color: #e1bee7;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.65rem;
+    background: rgba(206, 147, 216, 0.2);
+    color: #e1bee7;
+    border: 1px solid rgba(206, 147, 216, 0.35);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.65rem 1.2rem;
+    background: #7b1fa2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    border: 1px solid rgba(206, 147, 216, 0.4);
+}
+
+.project-link:hover {
+    background: #9c27b0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+.placeholder {
+    color: #b39ddb;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 2.5rem 1.25rem 3rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,297 @@
+/* Home Page Specific Styles */
+
+/* Introduction Section */
+#intro {
+    text-align: center;
+    background: rgba(74, 20, 140, 0.3);
+    padding: 3rem;
+    border-radius: 15px;
+    border: 2px solid rgba(206, 147, 216, 0.3);
+}
+
+.profile-image {
+    margin: 0 auto 2rem;
+    width: 200px;
+    height: 200px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ce93d8;
+    box-shadow: 0 8px 20px rgba(206, 147, 216, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(206, 147, 216, 0.6);
+}
+
+#intro p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #e1bee7;
+}
+
+.education {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(123, 31, 162, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(206, 147, 216, 0.4);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education h3 {
+    color: #ce93d8;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.education .school {
+    color: #ba68c8;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.education .details {
+    color: #e1bee7;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+/* Year Markers */
+.year-marker {
+    position: relative;
+    text-align: center;
+    margin: 3rem 0;
+    z-index: 3;
+}
+
+.year-marker h4 {
+    display: inline-block;
+    background: linear-gradient(135deg, #7b1fa2, #9c27b0);
+    color: #fff;
+    padding: 0.8rem 2.5rem;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    box-shadow: 0 6px 20px rgba(123, 31, 162, 0.5);
+    border: 3px solid rgba(206, 147, 216, 0.6);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.year-marker h4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(123, 31, 162, 0.7);
+}
+
+}
+
+/* Timeline vertical line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 5%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #7b1fa2, #4a148c, #7b1fa2);
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* Timeline Event */
+.timeline-event {
+    position: relative;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Timeline Marker (circle on the line) */
+.timeline-marker {
+    position: absolute;
+    left: 5%;
+    top: 2rem;
+    width: 20px;
+    height: 20px;
+    background: #ce93d8;
+    border: 4px solid #4a148c;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(206, 147, 216, 0.6);
+}
+
+/* Timeline Content */
+.timeline-content {
+    background: rgba(74, 20, 140, 0.4);
+    border: 2px solid rgba(206, 147, 216, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 2rem;
+    align-items: start;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Event Image */
+.event-image {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid rgba(206, 147, 216, 0.5);
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.event-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Event Text */
+.event-text h3 {
+    color: #ce93d8;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-date {
+    color: #ba68c8;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.event-text p {
+    color: #e1bee7;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Small Timeline Items - Compact Style */
+.timeline-small {
+    margin-bottom: 1.5rem;
+}
+
+.small-item {
+    background: rgba(74, 20, 140, 0.25);
+    border: 1px solid rgba(206, 147, 216, 0.25);
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+}
+
+.small-item:hover {
+    background: rgba(74, 20, 140, 0.35);
+    border-color: rgba(206, 147, 216, 0.4);
+    transform: translateX(5px);
+}
+
+.small-item h4 {
+    color: #ba68c8;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.small-term {
+    color: #9575cd;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin: 0;
+}
+
+.event-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+}
+
+#contact .event-links {
+    justify-content: center;
+}
+
+.event-link {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: #7b1fa2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin-top: 1.2rem;
+}
+
+.event-links .event-link {
+    margin-top: 0;
+}
+
+.event-link:hover {
+    background: #9c27b0;
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design for Home Page */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-marker {
+        left: 30px;
+    }
+    
+    .timeline-content {
+        grid-template-columns: 1fr;
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+    
+    .event-text h3 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Laureano - Portfolio</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <h1>Nicholas Laureano</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects/index.html">Projects</a>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Introduction section -->
+        <section id="intro">
+            <div class="profile-image">
+                <img src="./assets/pictures/nicholas-pic.jpg" alt="Nicholas Laureano">
+            </div>
+            <h2>Welcome</h2>
+            <p>Hi! I'm Nicholas, a Computer Science student at the University of Oregon with a passion for software engineering, machine learning, and distributed systems. I've worked at Microsoft on cloud-native reliability and founded Runic Solutions to build offline AI solutions. Explore my journey below!</p>
+            <div class="education">
+                <h3>B.S. Computer Science</h3>
+                <p class="school">University of Oregon | Minors: Mathematics and Earth Sciences</p>
+                <p class="details">2023-2026 | GPA: 4.10</p>
+            </div>
+        </section>
+
+        <!-- Timeline section -->
+        <section id="timeline">
+            <h2>My Journey</h2>
+            <div class="timeline">
+                <!-- Year Marker: UPCOMING -->
+                <div class="year-marker">
+                    <h4>UPCOMING</h4>
+                </div>
+
+                <!-- Upcoming -->
+                <article class="timeline-event">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="event-image">
+                            <img src="./assets/pictures/epic-logo-pic.jpg" alt="Epic Systems">
+                        </div>
+                        <div class="event-text">
+                            <h3>Epic Systems - Software Engineer</h3>
+                            <p class="event-date"> Starting August 2026</p>
+                            <p>I'll be starting as a Software Developer at Epic in Madison, WI after graduation from the University of Oregon. I'm excited to contribute to healthcare software solutions and grow my skills in a dynamic environment.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Physics Sim -->
+                <article class="timeline-event">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="event-image">
+                            <img src="https://placehold.co/400x250/ba68c8/FFFFFF?text=Physics+Sim&font=Lato" alt="Physics Simulation Project">
+                        </div>
+                        <div class="event-text">
+                            <h3>Physics Simulation</h3>
+                            <p class="event-date">Interactive Simulation</p>
+                            <p>Building an interactive physics simulation using JavaScript and HTML5 Canvas. This project explores particle dynamics, collision detection, and real-time rendering.</p>
+                            <a href="projects/physics-sim/index.html" class="event-link">View Project →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Year Marker: PRESENT -->
+                <div class="year-marker">
+                    <h4>PRESENT (2026)</h4>
+                </div>
+
+                <!-- Course: CS 410 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 410 - Entrepreneurship in CS</h4>
+                        <p class="small-term">Winter 2026</p>
+                    </div>
+                </article>
+                
+                <!-- Runic Solutions -->
+                <article class="timeline-event">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="event-image">
+                            <img src="./assets/pictures/runic-logo-pic.jpg" alt="Runic Solutions">
+                        </div>
+                        <div class="event-text">
+                            <h3>Runic Solutions - Founding Software Engineer</h3>
+                            <p class="event-date">September 2025 - Present</p>
+                            <p>Developing a fully offline, on-device LLM system using Kotlin, Jetpack Compose, and Google's MediaPipe Tasks. Eliminated a main-thread inference bottleneck, reducing UI freeze time by ~15 seconds per prompt. Implemented persistent conversation storage with GSON, reducing local data load times by over 30%.</p>
+                            <a href="https://www.runicsolutions.dev" class="event-link" target="_blank" rel="noopener">Visit Website →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Year Marker: 2025 -->
+                <div class="year-marker">
+                    <h4>2025</h4>
+                </div>
+
+                <!-- Course: CS 451 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 451 - Databases</h4>
+                        <p class="small-term">Fall 2025</p>
+                    </div>
+                </article>
+
+                <!-- Microsoft -->
+                <article class="timeline-event">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="event-image">
+                            <img src="./assets/pictures/microsoft-pic.jpg" alt="Microsoft Internship">
+                        </div>
+                        <div class="event-text">
+                            <h3>Microsoft - Software Engineer Intern</h3>
+                            <p class="event-date">June 2025 - September 2025</p>
+                            <p>Deployed 3 long-running testing suites for AKS's multi-cluster management production system. Built end-to-end scenarios integrated into CI/CD pipelines. Authored distributed Kubernetes test frameworks in Go, increasing pre-production test coverage by ~50%.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Seismic Event Classification -->
+                <article class="timeline-event">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="event-image">
+                            <img src="./assets/pictures/seismic-cnn-pic.png" alt="Seismic Event Classification">
+                        </div>
+                        <div class="event-text">
+                            <h3>Seismic Event Classification Neural Network</h3>
+                            <p class="event-date">Machine Learning Project</p>
+                            <p>Built a CNN to classify multichannel seismic waveform data using PyTorch. Achieved 74.76% overall accuracy and 84.53% binary accuracy (EQ vs. Noise) on held-out test data. Conducted hyperparameter tuning with CUDA GPU acceleration.</p>
+                            <div class="event-links">
+                                <a href="https://github.com/NLaureano/SeismoCNN" class="event-link" target="_blank" rel="noopener">View on GitHub →</a>
+                                <a href="https://github.com/NLaureano/SeismoCNN/blob/master/Seismic_Event_Classification_Using_Convolutional_Neural_Networks_on_Multichannel_Waveform_Data.pdf" class="event-link" target="_blank" rel="noopener">Research Paper →</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Course: CS 472 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 472 - Machine Learning</h4>
+                        <p class="small-term">Spring 2025</p>
+                    </div>
+                </article>
+
+                <!-- Course: CS 425 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 425 - Programming Languages</h4>
+                        <p class="small-term">Spring 2025</p>
+                    </div>
+                </article>
+
+                <!-- Course: MATH 458 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>MATH 458 - Mathematical Cryptography</h4>
+                        <p class="small-term">Spring 2025</p>
+                    </div>
+                </article>
+
+                <!-- Yummers App -->
+                <article class="timeline-event">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="event-image">
+                            <img src="./assets/pictures/yummers-pic.png" alt="Yummers Restaurant App">
+                        </div>
+                        <div class="event-text">
+                            <h3>Yummers - Restaurant Decision Making App</h3>
+                            <p class="event-date">Full-Stack Mobile App</p>
+                            <p>Built a cross-platform mobile app using Flutter/Dart to help couples and groups choose restaurants effortlessly. Designed and deployed a Flask REST API with a cloud-hosted MySQL database. Focused on intuitive UX backed by detailed system design.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Course: MATH 342 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>MATH 342 - Linear Algebra II</h4>
+                        <p class="small-term">Winter 2025</p>
+                    </div>
+                </article>
+
+                <!-- Course: CS 422 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 422 - Software Engineering</h4>
+                        <p class="small-term">Winter 2025</p>
+                    </div>
+                </article>
+
+                <!-- Course: CS 445 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 445 - Modeling and Simulations</h4>
+                        <p class="small-term">Winter 2025</p>
+                    </div>
+                </article>
+
+                <!-- Pandemic Simulator -->
+                <article class="timeline-event">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="event-image">
+                            <img src="./assets/pictures/pandemic-pic.jpg" alt="Pandemic Simulator">
+                        </div>
+                        <div class="event-text">
+                            <h3>Pandemic Simulator</h3>
+                            <p class="event-date">Python Simulation Project</p>
+                            <p>Designed an interactive global infection simulation tool with real-time visualization using TKinter and NumPy. Factored in country-specific traits such as population, development-index, and geographic connections. Engineered a probabilistic infection spread model.</p>
+                            <a href="https://github.com/NLaureano/GlobalInfectionSimulator" class="event-link" target="_blank" rel="noopener">View on GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Year Marker: 2024 -->
+                <div class="year-marker">
+                    <h4>2024</h4>
+                </div>
+
+                <!-- MTX Contractors -->
+                <article class="timeline-event">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="event-image">
+                            <img src="./assets/pictures/mtx-project-pic.png" alt="MTX Contractors">
+                        </div>
+                        <div class="event-text">
+                            <h3>MTX Contractors - Civil Engineering Intern</h3>
+                            <p class="event-date">June 2024 - May 2025</p>
+                            <p>Developed a Python/Matplotlib application to visualize elevation data from an API. Analyzed civil construction plans and geotechnical reports to generate over $40 million worth of estimates. Led the acquisition of over $1 million worth of work with profit margins up to 50%.</p>
+                            <a href="https://github.com/NLaureano/Elevation-Project" class="event-link" target="_blank" rel="noopener">View on GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Course: MATH 341 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>MATH 341 - Linear Algebra I</h4>
+                        <p class="small-term">Fall 2024</p>
+                    </div>
+                </article>
+
+                <!-- Course: CS 415 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 415 - Operating Systems</h4>
+                        <p class="small-term">Fall 2024</p>
+                    </div>
+                </article>
+
+                <!-- Course: CS 322 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 322 - Intro to Software Engineering</h4>
+                        <p class="small-term">Fall 2024</p>
+                    </div>
+                </article>
+
+                <!-- Course: CS 315 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 315 - Algorithms</h4>
+                        <p class="small-term">Spring 2024</p>
+                    </div>
+                </article>
+
+                <!-- Course: CS 330 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 330 - C/C++/UNIX</h4>
+                        <p class="small-term">Spring 2024</p>
+                    </div>
+                </article>
+
+                <!-- Course: CS 314 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 314 - Computer Organization</h4>
+                        <p class="small-term">Winter 2024</p>
+                    </div>
+                </article>
+
+                <!-- Course: CS 313 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 313 - Data Structures</h4>
+                        <p class="small-term">Winter 2024</p>
+                    </div>
+                </article>
+
+                <!-- Year Marker: 2023 -->
+                <div class="year-marker">
+                    <h4>2023</h4>
+                </div>
+
+                <!-- Course: CS 212 -->
+                <article class="timeline-event timeline-small">
+                    <div class="timeline-marker"></div>
+                    <div class="small-item">
+                        <h4>CS 212 - Computer Science III</h4>
+                        <p class="small-term">Fall 2023</p>
+                    </div>
+                </article>
+
+                <!-- University of Oregon -->
+                <article class="timeline-event">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="event-image">
+                            <img src="./assets/pictures/uo-logo-pic.jpg" alt="University of Oregon">
+                        </div>
+                        <div class="event-text">
+                            <h3>University of Oregon - Computer Science Student</h3>
+                            <p class="event-date">September 2023 - Present</p>
+                            <p>Started my B.S. in Computer Science with minors in Mathematics and Earth Sciences.<br>
+                            GPA: 4.10<br>
+                            On Track for <em>Summa Cum Laude</em></p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Year Marker: PRE-2023 -->
+                <div class="year-marker">
+                    <h4>PRE-2023</h4>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out if you'd like to collaborate or just say hello!</p>
+            <div class="event-links">
+                <a href="https://github.com/NLaureano" class="event-link" target="_blank" rel="noopener">GitHub →</a>
+                <a href="https://www.linkedin.com/in/nicholas-laureano" class="event-link" target="_blank" rel="noopener">LinkedIn →</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Nicholas Laureano</p>
+    </footer>
+
+    <script src="js/global.js"></script>
+</body>
+</html>
