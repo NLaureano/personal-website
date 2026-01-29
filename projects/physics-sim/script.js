@@ -437,6 +437,20 @@ window.addEventListener('DOMContentLoaded', () => {
     // Initialize renderer
     Renderer.initialize(canvas);
     
+    // Function to set canvas size and update physics boundaries
+    function resizeCanvas() {
+        const wrapper = canvas.parentElement;
+        canvas.width = wrapper.clientWidth;
+        canvas.height = wrapper.clientHeight;
+        PhysicsCore.setBoundarySize(Renderer.getCanvasDim());
+    }
+    
+    // Set initial canvas size
+    resizeCanvas();
+    
+    // Update canvas size on window resize
+    window.addEventListener('resize', resizeCanvas);
+    
     // Set boundary size for physics calculations
     PhysicsCore.setBoundarySize(Renderer.getCanvasDim());
     
