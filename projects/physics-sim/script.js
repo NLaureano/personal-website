@@ -454,13 +454,27 @@ window.addEventListener('DOMContentLoaded', () => {
     // Set boundary size for physics calculations
     PhysicsCore.setBoundarySize(Renderer.getCanvasDim());
     
-    // Add five large particles across the middle of the screen
-    const middleY = 300;
-    const xPositions = [133, 400, 666];
-    const masses = [100, 200, 500]
-    xPositions.forEach((x, index) => {
-        PhysicsCore.addParticle(Vector.create(x, middleY), Vector.create(0, 0), masses[index], 50);
-    });
+    // Add three large particles in a tower at the center of the screen
+    function addDefaultParticles() {
+        const canvasDim = Renderer.getCanvasDim();
+        const centerX = canvasDim.width / 2;
+        const centerY = canvasDim.height / 2;
+        const radius = 50;
+        const particleDiameter = radius * 2;
+        
+        // Stack particles vertically, centered horizontally
+        const particles = [
+            { y: centerY - particleDiameter, mass: 100 },
+            { y: centerY, mass: 200 },
+            { y: centerY + particleDiameter, mass: 500 }
+        ];
+        
+        particles.forEach(p => {
+            PhysicsCore.addParticle(Vector.create(centerX, p.y), Vector.create(0, 0), p.mass, radius);
+        });
+    }
+    
+    addDefaultParticles();
     particleCounter.textContent = PhysicsCore.getParticleCount()
     
     Renderer.clickHandler((position) => {
