@@ -4,6 +4,55 @@ main {
     padding: 2rem 1rem;
 }
 
+.tutorial {
+    background: rgba(79, 124, 255, 0.08);
+    border: 1px solid rgba(79, 124, 255, 0.2);
+    border-radius: 8px;
+    padding: 24px;
+    margin: 0 auto 32px auto;
+    max-width: 800px;
+}
+
+.tutorial h2 {
+    color: #4f7cff;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.tutorial p {
+    margin: 12px 0;
+    line-height: 1.6;
+    color: #d1d1d8;
+}
+
+.tutorial ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0 0;
+}
+
+.tutorial li {
+    margin: 12px 0;
+    padding-left: 24px;
+    position: relative;
+    line-height: 1.6;
+    color: #d1d1d8;
+}
+
+.tutorial li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #4f7cff;
+    font-weight: bold;
+}
+
+.tutorial strong {
+    color: #e8e8ec;
+    font-weight: 600;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;

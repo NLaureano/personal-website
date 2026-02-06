@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Physics Simulation | Nicholas Laureano</title>
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nicholas Laureano</h1>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../index.html">Projects</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="tutorial">
+            <h2>About This Simulation</h2>
+            <p>Welcome to the <strong>Multiplayer Physics Simulation</strong>! This is a live, collaborative physics engine where you and other players can interact with the same particle world in real-time.</p>
+            <ul>
+                <li><strong>Spawn Particles:</strong> Click or tap anywhere on the canvas to create particles with your configured settings</li>
+                <li><strong>Customize:</strong> Adjust mass, radius, and velocity using the controls below</li>
+                <li><strong>Multiplayer:</strong> All particles and player actions are synchronized across connected clients</li>
+                <li><strong>Reset:</strong> Use the "Reset World" button to clear all particles</li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="canvas-wrapper">
+                <canvas id="liveCanvas"></canvas>
+            </div>
+            <div class="control-panel">
+                <div class="control-group">
+                    <h3>Server</h3>
+                    <div class="button-row">
+                        <button id="connectBtn" class="primary-btn">Connect</button>
+                        <button id="disconnectBtn" class="danger-btn" disabled>Disconnect</button>
+                    </div>
+                    <div class="button-row">
+                        <button id="resetBtn" class="ghost-btn" disabled>Reset World</button>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-label">Particles</span>
+                            <span id="particleCount">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">FPS</span>
+                            <span id="fps">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Player Count</span>
+                            <span id="clientCount">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Damping</span>
+                            <span id="damping">—</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Status</span>
+                            <span id="status">Disconnected</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <h3>Particle Settings</h3>
+                    <p class="hint">Click anywhere on the canvas to spawn a particle.</p>
+                    <div class="input-control">
+                        <label>Mass</label>
+                        <div class="input-group">
+                            <button class="input-btn minus" data-target="massInput">−</button>
+                            <input type="number" id="massInput" value="1" min="1" max="10000" step="1">
+                            <button class="input-btn plus" data-target="massInput">+</button>
+                        </div>
+                    </div>
+                    <div class="input-control">
+                        <label>Radius</label>
+                        <div class="input-group">
+                            <button class="input-btn minus" data-target="radiusInput">−</button>
+                            <input type="number" id="radiusInput" value="8" min="1" max="200" step="1">
+                            <button class="input-btn plus" data-target="radiusInput">+</button>
+                        </div>
+                    </div>
+                    <div class="input-control">
+                        <label>Velocity X</label>
+                        <div class="input-group">
+                            <button class="input-btn minus" data-target="velocityXInput">−</button>
+                            <input type="number" id="velocityXInput" value="0" min="-50000" max="50000" step="100">
+                            <button class="input-btn plus" data-target="velocityXInput">+</button>
+                        </div>
+                    </div>
+                    <div class="input-control">
+                        <label>Velocity Y</label>
+                        <div class="input-group">
+                            <button class="input-btn minus" data-target="velocityYInput">−</button>
+                            <input type="number" id="velocityYInput" value="0" min="-50000" max="50000" step="100">
+                            <button class="input-btn plus" data-target="velocityYInput">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nicholas Laureano</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="../../js/global.js"></script>
+</body>
+</html>
