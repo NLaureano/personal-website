@@ -15,7 +15,7 @@ main {
     padding: 3rem 2rem;
     background: rgba(74, 20, 140, 0.35);
     border: 2px solid rgba(206, 147, 216, 0.35);
-    border-radius: 18px;
+    border-radius: 1px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
@@ -49,7 +49,7 @@ main {
 .project-card {
     background: rgba(74, 20, 140, 0.4);
     border: 1px solid rgba(206, 147, 216, 0.35);
-    border-radius: 14px;
+    border-radius: 1px;
     padding: 1.5rem;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
     display: flex;
@@ -88,7 +88,7 @@ main {
     background: rgba(206, 147, 216, 0.2);
     color: #e1bee7;
     border: 1px solid rgba(206, 147, 216, 0.35);
-    border-radius: 999px;
+    border-radius: 1px;
     font-size: 0.85rem;
     font-weight: 600;
 }
@@ -106,7 +106,7 @@ main {
     background: #7b1fa2;
     color: #fff;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 1px;
     font-weight: 600;
     transition: all 0.25s ease;
     border: 1px solid rgba(206, 147, 216, 0.4);
